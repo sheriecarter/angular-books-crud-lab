@@ -15,6 +15,14 @@
   <h1>Books App </h1>
   <div ng-controller="bookController as bookIndexCtrl">
 <p><b>bookIndexCtrl.newBook:</b> {{bookIndexCtrl.newBook}}</p>
+<input type="text" class="form-control" placeholder="New Book Title" ng-model="bookIndexCtrl.newbook.title">
+<input type="text" class="form-control" placeholder="New Book Author" ng-model="bookIndexCtrl.newbook.author">
+<!-- <input type="text" class="form-control" placeholder="New Book Image" ng-model="bookIndexCtrl.newbook.image"> -->
+<input type="text" class="form-control" placeholder="New Book releaseDate" ng-model="bookIndexCtrl.newbook.releaseDate">
+
   </div>
+  <div ng-repeat="book in bookIndexCtrl.book">
+  {{book}}
+</div>
 </body>
 </html>
