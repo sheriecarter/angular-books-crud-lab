@@ -10,12 +10,12 @@ function config (  $routeProvider,   $locationProvider  )  {
   $routeProvider
     .when('/', {
       templateUrl: 'templates/books/index.html',
-      controller: 'BooksIndexController',
+      controller: 'booksIndexController',
       controllerAs: 'booksIndexCtrl'
     })
     .when('/books/:id', {
       templateUrl: 'templates/books/show.html',
-      controller: 'BooksShowController',
+      controller: 'booksShowController',
       controllerAs: 'booksShowCtrl'
     })
     .otherwise({
