@@ -1,5 +1,8 @@
+angular.module('bookApp')
+  .controller('BooksIndexController', booksIndexControler);
 
-
+  booksIndexController.$inject=['$http'];
+  
 
 
  function booksIndexController () {
